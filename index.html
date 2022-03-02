@@ -19,16 +19,22 @@
 </head>
 
 <body>
+  <!-- header Parts Starts -->
   <header>
-    <h2 class="text-center my-4 text-danger fw-bold display-2">Phone <span class="text-success">Finder</span></h2>
+    <div class="container">
+      <h2 class="text-center my-4 text-primary fw-bold display-2">
+        Phone <span class="text-dark">Finder</span>
+      </h2>
+    </div>
   </header>
+  <!-- header Parts Starts -->
 
-  <!-- search parts Starts -->
+  <!-- Search Area Starts  -->
   <section>
     <div class="container">
-      <div class="search-area w-md-75 mx-auto p-2 p-md-5">
+      <div class="search-area w-md-50 mx-auto p-1 p-md-4">
         <div class="d-flex ">
-          <input id="search-field" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input id="search-field" class="form-control me-2" type="search" placeholder="Search your phone" aria-label="Search">
           <button onclick="searchPhone()" class="btn btn-primary" type="submit">Search</button>
         </div>
       </div>
@@ -39,28 +45,37 @@
       </div>
     </div>
   </section>
-  <!-- search parts ends -->
+  <!-- Search Area Ends  -->
 
-  <!-- display details -->
-  <section class="my-4">
-    <div class="container">
-        <div class="text-center" id="details"><h2 class="text-dark display-3">Your desired phone's details</h2></div>
-        <div id="displays" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        </div>
-    </div>
-</section>
-  <!-- display details -->
 
-  <!-- display search results -->
-  <section class="py-3">
+  <!-- Display Details parts Starts  -->
+  <section class="my-5">
     <div class="container">
-        <div class="text-center mb-4" id="search-heading"><h2 class="text-primary display-2">Your Search result</h2></div>
-        <div class="text-center mb-4" id="error"><h2 class="text-danger display-2">Your desired product not found! <br> Please search with other <strong class="text-primary">Keyword!</strong> </h2></div>
-        <div id="display-search" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        </div>
+      <div class="text-center" id="detail-heading">
+        <h2 class="text-primary display-2">Your desired phone's details</h2>
+      </div>
+      <div id="display-detail" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      </div>
     </div>
-</section>
-  <!-- display search results -->
+  </section>
+  <!-- Display Details parts Ends  -->
+
+
+  <!-- Display Search Results parts Starts -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4" id="search-heading">
+        <h2 class="text-success display-3">Your Search result appeard</h2>
+      </div>
+      <div class="text-center mb-4" id="display-error">
+        <h2 class="text-dark display-3">Your desired product not found! <br> Please  <strong
+            class="text-dark">Keyword!</strong> </h2>
+      </div>
+      <div id="display-search" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      </div>
+    </div>
+  </section>
+  <!-- Display Search Results parts Ends -->
   <!-- js bootstrap link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
